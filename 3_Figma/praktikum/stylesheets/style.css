@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    font-family:'Montserrat';
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav.navbar{
+    width: 1342px;
+    height: 90px;
+    background-color: #4593FF;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: left;
+}
+.nav-left{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right{
+    width: 220px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+button.sign-up-btn{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F8FBFF;
+    display: inline-flex;
+    text-align: center;
+    word-wrap: break-word;
+    color: #4593FF;
+    justify-content: center;
+    border: none;
+}
+.log-in-btn{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4593FF;
+    display: inline-flex;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    justify-content: center;
+    margin-right: 2px;
+}
+button.learn-btn{
+    width: 145px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4593FF;
+    display: inline-flex;
+    align-items: center;
+    word-wrap: break-word;
+    color: white;
+    justify-content: center;
+    margin-top: 25px;
+    border: none;
+    gap: 10px;
+    font-size: 15px;
+}
+button.info-btn{
+    width: 150px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4593FF;
+    display: inline-flex;
+    align-items: center;
+    word-wrap: break-word;
+    color: white;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+    margin-left: 90px;
+    font-size: 15px;
+}
+button.make-btn{
+    width: 218px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4593FF;
+    display: inline-flex;
+    align-items: center;
+    word-wrap: break-word;
+    color: white;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+    margin-left: 70px;
+    font-size: 15px;
+}
+.nav-links-custom{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-bottom: 28px;
+    margin-top: 20px;
+    margin-right: 10px
+}
+.nav-link-custom{
+    margin-right: 47px;
+}
+ul.dropdown-menu{
+    margin-left: 728px;
+    border: none;
+    background: none;
+}
+a.dropdown-item{
+    width:180px;
+    height:42px;
+    background-color: #4593FF;
+    padding: 10px 10px;
+    color: #F8FBFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+a.dropdown-item:hover{
+    color: #4593FF;
+}
+.Logo{
+    width: 36px;
+    height: 34px;
+    margin-left: 37px;
+    margin-top: 20px;
+    margin-bottom:28px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.Logo-b{
+    width: 50px;
+    height: 50px;
+    margin-left: 37px;
+    margin-top: 20px;
+    margin-bottom:28px;
+    display: flex;
+}
+.text{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+    color: #4593FF;
+}
+.Home{
+    color: #F8FBFF;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 500px;
+    word-wrap: break-word;
+}
+.bigtext{
+    width: 371px;
+    height: 98px;
+    flex-shrink: 0;
+    color: #3B4053;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-top: 81px;
+}
+.desctext{
+    margin-top: 17px;
+    width: 476px;
+    color: #3B4053;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+}
+.medic-img{
+    width: 450px;
+    height: 450px;
+    flex-shrink: 0;
+    margin-left: 35px;
+}
+h5.card-title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    color:#3B4053;
+}
+p.card-text{
+    width: 334px;
+    height:181px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p.card-text-2{
+    width: 334px;
+    height:181px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.card{
+    align-items: center;
+    width: 435px;
+    height: 403px;
+    display: inline-flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: none;
+    background: none;
+}
+.card-dr{
+    width: 427px;
+    height: 190px;
+    display: flex;
+    justify-content: left;
+}
+.img-dr{
+    width: 110px;
+    height: 110px;
+}
+.name-dr{
+    width: 180px;
+    height: 19px;
+    color: #3B4053;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 50px;
+}
+.job{
+    width: 137px;
+    height: 37px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3B4053;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+    color: #F8FBFF;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.footer{
+    height: 150px;
+}
+.card-footer{
+    margin-left: 80px;
+}
+.headlines{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #3B4053;
+    margin-bottom: 6px;
+    margin-top: 25px;
+}
+.lines{
+    font-size: 13px;
+    color: #3B4053;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+button.contact-btn{
+    width: 232px;
+    height: 60px;
+    background-color: #4593FF;
+    border-radius: 5px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    color: #F8FBFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
