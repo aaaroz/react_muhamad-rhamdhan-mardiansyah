@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
+    <label class="pname">Product name :</label><br />
+    <input id="pname" name="pname" value="" /><br />
+    <label for="cars">Product category :</label><br />
+    <select class="cars" name="cars">
+      <option value="volvo"></option>
+      <option value="saab"></option>
+      <option value="fiat"></option>
+      <option value="audi"></option>
+    </select>
+    <form>
+      <label>Product Freshness :</label><br />
+      <input
+        class="radio"
+        type="radio"
+        id="html"
+        name="fav_language"
+        value="HTML"
+      />
+      <label for="html">Brand New</label><br />
+      <input
+        class="radio"
+        type="radio"
+        id="html"
+        name="fav_language"
+        value="HTML"
+      />
+      <label for="html">Second Hand</label><br />
+      <input
+        class="radio"
+        type="radio"
+        id="html"
+        name="fav_language"
+        value="HTML"
+      />
+      <label for="html">Refurbished</label><br />
+    </form>
+    <form>
+      <label for="myfile">Image of product</label>
+      <input class="file" type="file" id="myfile" name="myfile" /><br /><br />
+      <label>Additional Description</label><br />
+      <textarea name="message" rows="8" cols="38"></textarea><br />
+      <label class="pname">Product price :</label><br />
+      <input id="price" name="fname" value="$100" /><br /><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
