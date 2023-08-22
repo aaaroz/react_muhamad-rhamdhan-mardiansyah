@@ -3,56 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="stylesheets/main.css" rel="stylesheet" />
+    <title>CreateProduct</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      h1 {
+        margin: 0px;
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      h2 {
+        margin: 0px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      label {
+        font-size: 12px;
+      }
+      input#pname {
+        width: 159px;
+        height: 14px;
+        border: 0.5px solid;
+        border-color: black;
+        font-size: 12px;
+      }
+      input#price {
+        width: 47px;
+        height: 18px;
+        border: 0.5px solid;
+        border-color: black;
+        font-size: 12px;
+        color: #827f7f;
+        text-align: center;
+      }
+      select.cat {
+        width: 71px;
+        height: 15px;
+        font-size: 12px;
+        border: 0.5px solid;
+        border-color: black;
+      }
+      input.radio {
+        width: 9px;
+        height: 9px;
+      }
+      input.file {
+        font-size: 12px;
+      }
+      input#submit {
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <h1>Create Product</h1>
-    <h2>Detail Product</h2>
-    <label class="pname">Product name :</label><br />
-    <input id="pname" name="pname" value="" /><br />
-    <label for="cars">Product category :</label><br />
-    <select class="cars" name="cars">
-      <option value="volvo"></option>
-      <option value="saab"></option>
-      <option value="fiat"></option>
-      <option value="audi"></option>
-    </select>
-    <form>
-      <label>Product Freshness :</label><br />
+    <div class="container">
+      <h1>Create Product</h1>
+      <h2>Detail Product</h2>
+      <label class="pname">Product name :</label>
       <input
-        class="radio"
-        type="radio"
-        id="html"
-        name="fav_language"
-        value="HTML"
+        type="text"
+        id="pname"
+        name="pname"
+        value=""
+        required
+        min="6"
+        max="50"
       />
-      <label for="html">Brand New</label><br />
-      <input
-        class="radio"
-        type="radio"
-        id="html"
-        name="fav_language"
-        value="HTML"
-      />
-      <label for="html">Second Hand</label><br />
-      <input
-        class="radio"
-        type="radio"
-        id="html"
-        name="fav_language"
-        value="HTML"
-      />
-      <label for="html">Refurbished</label><br />
-    </form>
-    <form>
-      <label for="myfile">Image of product</label>
-      <input class="file" type="file" id="myfile" name="myfile" /><br /><br />
-      <label>Additional Description</label><br />
-      <textarea name="message" rows="8" cols="38"></textarea><br />
-      <label class="pname">Product price :</label><br />
-      <input id="price" name="fname" value="$100" /><br /><br />
-      <input type="submit" id="submit" value="Submit" />
-    </form>
+      <label for="category">Product category :</label>
+      <select class="cat" name="cat" required>
+        <option value="hoodie">hoodie</option>
+        <option value="t-shirt">t-shirt</option>
+        <option value="jeans">jeans</option>
+        <option value="shirt">shirt</option>
+      </select>
+      <form>
+        <label>Product Freshness :</label>
+        <div class="rselect-1">
+          <input
+            class="radio"
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            required
+          />
+          <label for="html">Brand New</label>
+        </div>
+        <div class="rselect-2">
+          <input
+            class="radio"
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            required
+          />
+          <label for="html">Second Hand</label>
+        </div>
+        <div class="rselect-3">
+          <input
+            class="radio"
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            required
+          />
+          <label for="html">Refurbished</label>
+        </div>
+      </form>
+      <form>
+        <label for="myfile">Image of product</label>
+        <input class="file" type="file" id="myfile" name="myfile" required />
+      </form>
+      <label>Additional Description</label>
+      <textarea name="message" rows="8" cols="38"></textarea>
+      <label class="pname">Product price :</label>
+      <input type="number" id="price" name="fname" value="$100" required />
+      <input type="submit" id="submit" value="Submit" required />
+    </div>
   </body>
 </html>
