@@ -41,6 +41,12 @@
         align-items: flex-start;
         gap: 6px;
       }
+      .select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
       label.fname,
       label.lname,
       label.uname,
@@ -126,106 +132,116 @@
         <header>Create Account</header>
         <div class="form-title">Detail Form</div>
         <form>
-          <label class="fname">First name :</label>
-          <input type="text" id="fname" name="fname" value="" required />
-        </form>
-        <form>
-          <label class="lname">Last name :</label>
-          <input type="text" id="lname" name="lname" value="" required />
-        </form>
-        <form>
-          <label class="uname">Username :</label>
-          <input type="text" id="uname" name="uname" value="" required />
-        </form>
-        <form>
-          <label class="fname">Email :</label>
-          <input type="email" id="fname" name="fname" value="" required />
+          <div>
+            <label for="fname" class="fname">First name :</label>
+            <input type="text" id="fname" name="fname" value="" required />
+          </div>
+          <div>
+            <label for="lname" class="lname">Last name :</label>
+            <input type="text" id="lname" name="lname" value="" required />
+          </div>
+          <div>
+            <label for="uname" class="uname">Username :</label>
+            <input type="text" id="uname" name="uname" value="" required />
+          </div>
+          <div>
+            <label for="email" class="fname">Email :</label>
+            <input type="email" id="email" name="email" value="" required />
+          </div>
         </form>
         <form class="radio-input">
-          <label>Gender :</label>
+          <label for="gender">Gender :</label>
           <div class="input-1">
             <input
               class="radio"
               type="radio"
-              id="html"
-              name="fav_language"
-              value="HTML"
+              id="male"
+              name="gender"
+              value="male"
               required
             />
-            <label for="html">Male</label>
+            <label for="male">Male</label>
           </div>
           <div class="input-2">
             <input
               class="radio"
               type="radio"
-              id="html"
-              name="fav_language"
-              value="HTML"
+              id="female"
+              name="gender"
+              value="female"
               required
             />
-            <label for="html">Female</label>
+            <label for="female">Female</label>
           </div>
           <div class="input-3">
             <input
               class="radio"
               type="radio"
-              id="html"
-              name="fav_language"
-              value="HTML"
-              required
-            />
-            <label for="html">Other</label>
-          </div>
-        </form>
-        <form>
-          <label class="address">Address</label>
-          <input type="text" id="address" name="address" value="" required />
-        </form>
-        <form>
-          <label class="address">Address 2</label>
-          <input type="text" id="address" name="address" value="" required />
-        </form>
-        <form class="form-select">
-          <label class="nationality">Nationality :</label>
-          <label class="nationality-2">Nationality</label>
-          <select class="nation" name="nation">
-            <option value="indonesia">Indonesia</option>
-            <option value="US">United States</option>
-            <option value="malaysia">Malaysia</option>
-            <option value="singapura">Singapore</option>
-          </select>
-        </form>
-        <label class="nationality">Language Spoken :</label>
-        <form>
-          <div class="checkbox-1">
-            <input
-              type="checkbox"
-              id="lang"
-              name="bahasa"
-              value="bahasa"
-              required
-            />
-            <label id="lang" for="bahasa"> Bahasa Indonesia</label>
-          </div>
-          <div class="checkbox-2">
-            <input
-              type="checkbox"
-              id="lang"
-              name="english"
-              value="english"
-              required
-            />
-            <label id="lang" for="english"> English</label>
-          </div>
-          <div class="checkbox-3">
-            <input
-              type="checkbox"
-              id="lang"
-              name="other"
+              id="other"
+              name="gender"
               value="other"
               required
             />
-            <label id="lang" for="other"> Other</label>
+            <label for="other">Other</label>
+          </div>
+        </form>
+        <form>
+          <div class="address-1">
+            <label for="address" class="address">Address</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
+          <div class="address-2">
+            <label for="address" class="address">Address 2</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
+        </form>
+        <form class="form-select">
+          <div class="select">
+            <label for="nationality" class="nationality">Nationality :</label>
+            <label for="nationality-2" class="nationality-2">Nationality</label>
+            <select class="nation" name="nation">
+              <option value="indonesia">Indonesia</option>
+              <option value="US">United States</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="singapura">Singapore</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="lang-spoken">
+            <label for="lang-spoken" class="nationality"
+              >Language Spoken :</label
+            >
+            <div class="checkbox-1">
+              <input
+                type="checkbox"
+                id="lang"
+                name="bahasa"
+                value="bahasa"
+                required
+              />
+              <label id="lang" for="bahasa"> Bahasa Indonesia</label>
+            </div>
+            <div class="checkbox-2">
+              <input
+                type="checkbox"
+                id="lang"
+                name="english"
+                value="english"
+                required
+              />
+              <label id="lang" for="english"> English</label>
+            </div>
+            <div class="checkbox-3">
+              <input
+                type="checkbox"
+                id="lang"
+                name="other"
+                value="other"
+                required
+              />
+              <label id="lang" for="other"> Other</label>
+            </div>
           </div>
         </form>
         <a type="submit" id="submit" href="LandingPage.html">
