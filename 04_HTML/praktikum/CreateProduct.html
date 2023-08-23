@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateProduct</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container,
+      .product-name,
+      .product-cat,
+      .radio-input,
+      .file-input,
+      .text-area,
+      .number,
+      .button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-top: 5px;
+      }
+      h1 {
+        margin: 0px;
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      h2 {
+        margin: 0px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      label {
+        font-size: 12px;
+      }
+      input#pname {
+        width: 159px;
+        height: 14px;
+        border: 0.5px solid;
+        border-color: black;
+        font-size: 12px;
+      }
+      input#price {
+        width: 47px;
+        height: 18px;
+        border: 0.5px solid;
+        border-color: black;
+        font-size: 12px;
+        color: #827f7f;
+        text-align: center;
+      }
+      select.cat {
+        width: 71px;
+        height: 15px;
+        font-size: 12px;
+        border: 0.5px solid;
+        border-color: black;
+      }
+      input.radio {
+        width: 9px;
+        height: 9px;
+      }
+      input.file {
+        font-size: 12px;
+      }
+      input#submit {
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create Product</h1>
+      <h2>Detail Product</h2>
+      <form>
+        <div class="product-name">
+          <label for="pname" class="pname">Product name :</label>
+          <input
+            type="text"
+            id="pname"
+            name="pname"
+            value=""
+            required
+            min="6"
+            max="50"
+          />
+        </div>
+        <div class="product-cat">
+          <label for="cat">Product category :</label>
+          <select class="cat" name="cat" required>
+            <option value="hoodie">hoodie</option>
+            <option value="t-shirt">t-shirt</option>
+            <option value="jeans">jeans</option>
+            <option value="shirt">shirt</option>
+          </select>
+        </div>
+        <div class="radio-input">
+          <label for="productFreshness">Product Freshness :</label>
+          <div class="rselect-1">
+            <input
+              class="radio"
+              type="radio"
+              id="new"
+              name="fav_language"
+              value="new"
+              required
+            />
+            <label for="new">Brand New</label>
+          </div>
+          <div class="rselect-2">
+            <input
+              class="radio"
+              type="radio"
+              id="second"
+              name="fav_language"
+              value="second"
+              required
+            />
+            <label for="second">Second Hand</label>
+          </div>
+          <div class="rselect-3">
+            <input
+              class="radio"
+              type="radio"
+              id="Refurbished"
+              name="fav_language"
+              value="Refurbished"
+              required
+            />
+            <label for="Refurbished">Refurbished</label>
+          </div>
+        </div>
+        <div class="file-input">
+          <label for="myfile">Image of product</label>
+          <input class="file" type="file" id="myfile" name="myfile" required />
+        </div>
+        <div class="text-area">
+          <label for="message">Additional Description</label>
+          <textarea name="message" rows="8" cols="38"></textarea>
+        </div>
+        <div class="number">
+          <label for="price" class="pname">Product price :</label>
+          <input type="number" id="price" name="fname" value="$100" required />
+        </div>
+        <div class="button">
+          <input type="submit" id="submit" value="Submit" required />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

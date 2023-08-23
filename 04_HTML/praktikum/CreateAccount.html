@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <style>
+      .container {
+        width: 199px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      header {
+        color: #000;
+        font-family: "Times New Roman";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .form-title {
+        color: #000;
+        font-family: "Times New Roman";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      form.form-select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      label.fname,
+      label.lname,
+      label.uname,
+      label.address,
+      label.nationality,
+      label#lang {
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      label.nationality-2 {
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      input#fname,
+      input#lname,
+      input#uname,
+      input#address {
+        width: 159px;
+        height: 14px;
+        border: 0.5px solid #000;
+      }
+      .radio-input {
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      input.radio {
+        width: 9px;
+        height: 9px;
+        stroke-width: 0.5px;
+        stroke: #000;
+      }
+      select.nation {
+        width: 71px;
+        height: 15px;
+        font-size: 8px;
+      }
+      input#lang {
+        width: 13px;
+        height: 9px;
+        border-radius: 2px;
+        border: 0.5px solid #000;
+      }
+      a#submit {
+        padding: 3px 4px;
+        display: flex;
+        padding: 3px 4px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        color: #000;
+        font-family: Times New Roman;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #d9d9d9;
+        border: none;
+        text-decoration: none;
+      }
+      a#submit:hover {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>Create Account</header>
+        <div class="form-title">Detail Form</div>
+        <form>
+          <div>
+            <label for="fname" class="fname">First name :</label>
+            <input type="text" id="fname" name="fname" value="" required />
+          </div>
+          <div>
+            <label for="lname" class="lname">Last name :</label>
+            <input type="text" id="lname" name="lname" value="" required />
+          </div>
+          <div>
+            <label for="uname" class="uname">Username :</label>
+            <input type="text" id="uname" name="uname" value="" required />
+          </div>
+          <div>
+            <label for="email" class="fname">Email :</label>
+            <input type="email" id="email" name="email" value="" required />
+          </div>
+        </form>
+        <form class="radio-input">
+          <label for="gender">Gender :</label>
+          <div class="input-1">
+            <input
+              class="radio"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+            />
+            <label for="male">Male</label>
+          </div>
+          <div class="input-2">
+            <input
+              class="radio"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+          </div>
+          <div class="input-3">
+            <input
+              class="radio"
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              required
+            />
+            <label for="other">Other</label>
+          </div>
+        </form>
+        <form>
+          <div class="address-1">
+            <label for="address" class="address">Address</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
+          <div class="address-2">
+            <label for="address" class="address">Address 2</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
+        </form>
+        <form class="form-select">
+          <div class="select">
+            <label for="nationality" class="nationality">Nationality :</label>
+            <label for="nationality-2" class="nationality-2">Nationality</label>
+            <select class="nation" name="nation">
+              <option value="indonesia">Indonesia</option>
+              <option value="US">United States</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="singapura">Singapore</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="lang-spoken">
+            <label for="lang-spoken" class="nationality"
+              >Language Spoken :</label
+            >
+            <div class="checkbox-1">
+              <input
+                type="checkbox"
+                id="lang"
+                name="bahasa"
+                value="bahasa"
+                required
+              />
+              <label id="lang" for="bahasa"> Bahasa Indonesia</label>
+            </div>
+            <div class="checkbox-2">
+              <input
+                type="checkbox"
+                id="lang"
+                name="english"
+                value="english"
+                required
+              />
+              <label id="lang" for="english"> English</label>
+            </div>
+            <div class="checkbox-3">
+              <input
+                type="checkbox"
+                id="lang"
+                name="other"
+                value="other"
+                required
+              />
+              <label id="lang" for="other"> Other</label>
+            </div>
+          </div>
+        </form>
+        <a type="submit" id="submit" href="LandingPage.html">
+          Create Account
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
