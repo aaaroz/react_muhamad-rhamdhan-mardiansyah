@@ -8,11 +8,19 @@
       body {
         font-family: "Times New Roman", Times, serif;
       }
-      .container {
+      .container,
+      .product-name,
+      .product-cat,
+      .radio-input,
+      .file-input,
+      .text-area,
+      .number,
+      .button {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
+        margin-top: 5px;
       }
       h1 {
         margin: 0px;
@@ -76,68 +84,80 @@
     <div class="container">
       <h1>Create Product</h1>
       <h2>Detail Product</h2>
-      <label class="pname">Product name :</label>
-      <input
-        type="text"
-        id="pname"
-        name="pname"
-        value=""
-        required
-        min="6"
-        max="50"
-      />
-      <label for="category">Product category :</label>
-      <select class="cat" name="cat" required>
-        <option value="hoodie">hoodie</option>
-        <option value="t-shirt">t-shirt</option>
-        <option value="jeans">jeans</option>
-        <option value="shirt">shirt</option>
-      </select>
       <form>
-        <label>Product Freshness :</label>
-        <div class="rselect-1">
+        <div class="product-name">
+          <label class="pname">Product name :</label>
           <input
-            class="radio"
-            type="radio"
-            id="html"
-            name="fav_language"
-            value="HTML"
+            type="text"
+            id="pname"
+            name="pname"
+            value=""
             required
+            min="6"
+            max="50"
           />
-          <label for="html">Brand New</label>
         </div>
-        <div class="rselect-2">
-          <input
-            class="radio"
-            type="radio"
-            id="html"
-            name="fav_language"
-            value="HTML"
-            required
-          />
-          <label for="html">Second Hand</label>
+        <div class="product-cat">
+          <label for="category">Product category :</label>
+          <select class="cat" name="cat" required>
+            <option value="hoodie">hoodie</option>
+            <option value="t-shirt">t-shirt</option>
+            <option value="jeans">jeans</option>
+            <option value="shirt">shirt</option>
+          </select>
         </div>
-        <div class="rselect-3">
-          <input
-            class="radio"
-            type="radio"
-            id="html"
-            name="fav_language"
-            value="HTML"
-            required
-          />
-          <label for="html">Refurbished</label>
+        <div class="radio-input">
+          <label>Product Freshness :</label>
+          <div class="rselect-1">
+            <input
+              class="radio"
+              type="radio"
+              id="html"
+              name="fav_language"
+              value="HTML"
+              required
+            />
+            <label for="html">Brand New</label>
+          </div>
+          <div class="rselect-2">
+            <input
+              class="radio"
+              type="radio"
+              id="html"
+              name="fav_language"
+              value="HTML"
+              required
+            />
+            <label for="html">Second Hand</label>
+          </div>
+          <div class="rselect-3">
+            <input
+              class="radio"
+              type="radio"
+              id="html"
+              name="fav_language"
+              value="HTML"
+              required
+            />
+            <label for="html">Refurbished</label>
+          </div>
+        </div>
+        <div class="file-input">
+          <label for="myfile">Image of product</label>
+          <input class="file" type="file" id="myfile" name="myfile" required />
+        </div>
+        <div class="text-area">
+          <label>Additional Description</label>
+          <textarea name="message" rows="8" cols="38"></textarea>
+          <label class="pname">Product price :</label>
+        </div>
+        <div class="number">
+          <input type="number" id="price" name="fname" value="$100" required />
+        </div>
+        <div class="button">
+          <input type="submit" id="submit" value="Submit" required />
         </div>
       </form>
-      <form>
-        <label for="myfile">Image of product</label>
-        <input class="file" type="file" id="myfile" name="myfile" required />
-      </form>
-      <label>Additional Description</label>
-      <textarea name="message" rows="8" cols="38"></textarea>
-      <label class="pname">Product price :</label>
-      <input type="number" id="price" name="fname" value="$100" required />
-      <input type="submit" id="submit" value="Submit" required />
     </div>
   </body>
 </html>

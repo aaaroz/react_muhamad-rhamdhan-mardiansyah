@@ -41,6 +41,12 @@
         align-items: flex-start;
         gap: 6px;
       }
+      .select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
       label.fname,
       label.lname,
       label.uname,
@@ -126,20 +132,61 @@
         <header>Create Account</header>
         <div class="form-title">Detail Form</div>
         <form>
-          <label class="fname">First name :</label>
-          <input type="text" id="fname" name="fname" value="" required />
-        </form>
-        <form>
-          <label class="lname">Last name :</label>
-          <input type="text" id="lname" name="lname" value="" required />
-        </form>
-        <form>
-          <label class="uname">Username :</label>
-          <input type="text" id="uname" name="uname" value="" required />
-        </form>
-        <form>
-          <label class="fname">Email :</label>
-          <input type="email" id="fname" name="fname" value="" required />
+          <div>
+            <label class="fname">First name :</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              value=""
+              for="fname"
+              required
+            />
+          </div>
+          <div>
+            <label class="lname">Last name :</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value=""
+              for="fname"
+              required
+            />
+          </div>
+          <div>
+            <label class="uname">Username :</label>
+            <input
+              type="text"
+              id="uname"
+              name="uname"
+              value=""
+              for="fname"
+              required
+            />
+          </div>
+          <div>
+            <label class="uname">Username :</label>
+            <input
+              type="text"
+              id="uname"
+              name="uname"
+              value=""
+              for="fname"
+              required
+            />
+          </div>
+          <div>
+            <label class="fname">Email :</label>
+            <input
+              type="email"
+              id="fname"
+              name="fname"
+              value=""
+              for="fname"
+              required
+            />
+          </div>
         </form>
         <form class="radio-input">
           <label>Gender :</label>
@@ -178,54 +225,60 @@
           </div>
         </form>
         <form>
-          <label class="address">Address</label>
-          <input type="text" id="address" name="address" value="" required />
-        </form>
-        <form>
-          <label class="address">Address 2</label>
-          <input type="text" id="address" name="address" value="" required />
+          <div class="address-1">
+            <label class="address">Address</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
+          <div class="address-2">
+            <label class="address">Address 2</label>
+            <input type="text" id="address" name="address" value="" required />
+          </div>
         </form>
         <form class="form-select">
-          <label class="nationality">Nationality :</label>
-          <label class="nationality-2">Nationality</label>
-          <select class="nation" name="nation">
-            <option value="indonesia">Indonesia</option>
-            <option value="US">United States</option>
-            <option value="malaysia">Malaysia</option>
-            <option value="singapura">Singapore</option>
-          </select>
+          <div class="select">
+            <label class="nationality">Nationality :</label>
+            <label class="nationality-2">Nationality</label>
+            <select class="nation" name="nation">
+              <option value="indonesia">Indonesia</option>
+              <option value="US">United States</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="singapura">Singapore</option>
+            </select>
+          </div>
         </form>
-        <label class="nationality">Language Spoken :</label>
         <form>
-          <div class="checkbox-1">
-            <input
-              type="checkbox"
-              id="lang"
-              name="bahasa"
-              value="bahasa"
-              required
-            />
-            <label id="lang" for="bahasa"> Bahasa Indonesia</label>
-          </div>
-          <div class="checkbox-2">
-            <input
-              type="checkbox"
-              id="lang"
-              name="english"
-              value="english"
-              required
-            />
-            <label id="lang" for="english"> English</label>
-          </div>
-          <div class="checkbox-3">
-            <input
-              type="checkbox"
-              id="lang"
-              name="other"
-              value="other"
-              required
-            />
-            <label id="lang" for="other"> Other</label>
+          <div class="lang-spoken">
+            <label class="nationality">Language Spoken :</label>
+            <div class="checkbox-1">
+              <input
+                type="checkbox"
+                id="lang"
+                name="bahasa"
+                value="bahasa"
+                required
+              />
+              <label id="lang" for="bahasa"> Bahasa Indonesia</label>
+            </div>
+            <div class="checkbox-2">
+              <input
+                type="checkbox"
+                id="lang"
+                name="english"
+                value="english"
+                required
+              />
+              <label id="lang" for="english"> English</label>
+            </div>
+            <div class="checkbox-3">
+              <input
+                type="checkbox"
+                id="lang"
+                name="other"
+                value="other"
+                required
+              />
+              <label id="lang" for="other"> Other</label>
+            </div>
           </div>
         </form>
         <a type="submit" id="submit" href="LandingPage.html">
