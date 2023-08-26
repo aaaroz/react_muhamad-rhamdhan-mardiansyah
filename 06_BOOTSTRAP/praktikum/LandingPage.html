@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid pb-1">
+          <a
+            class="navbar-brand"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="This is Header."
+            href="#"
+            >Simple Header</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-xl-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-3">
+                <button type="button" class="btn btn-primary p-2">Home</button>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link link-primary" href="#">Features</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link link-primary" href="#">Pricing</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link link-primary" href="#">FAQs</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link link-primary" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <div class="headlines">Better Solutions For Your Business</div>
+            <div class="quote">
+              We are team of talented designers making websites with Bootstrap
+            </div>
+            <div class="btn-one">
+              <button
+                class="btn-get"
+                type="button"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Get Started to make ur bussiness."
+              >
+                Get Started
+              </button>
+              <button class="btn-watch" type="button">Watch Video</button>
+            </div>
+          </div>
+          <div class="col-6">
+            <img
+              src="assets/hero-img.png.png"
+              class="img-fluid"
+              alt="hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bottom-sec">
+      <h3>Join Our Newsletter</h3>
+      <p>
+        Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+      </p>
+      <div class="subs-form p-1">
+        <input
+          class="form-control"
+          type="text"
+          aria-label="default input example"
+        />
+        <button class="btn btn-primary subs p-2" type="button">
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container-fluid">
+        <div class="row row-md-4">
+          <div class="col card-1">
+            <h2>ARSHA</h2>
+            <p>A 108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <div class="phone"><b>Phone:</b> +1 5589 55488 55</div>
+            <div class="email"><b>Email:</b> info@example.com</div>
+          </div>
+          <div class="col card-2">
+            <h2>Useful Links</h2>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="col card-3">
+            <h2>Our Services</h2>
+            <a href="#">Web Design</a>
+            <a href="#">Web Development</a>
+            <a href="#">Product Management</a>
+            <a href="#">Marketing</a>
+            <a href="#">Graphic Design</a>
+          </div>
+          <div class="col card-4">
+            <h2>Our Social Network</h2>
+            <p>
+              Cras fermentum odio eu feugiat lide par naso tierra videa magna
+              derita valies
+            </p>
+            <div class="ellipse-group">
+              <div class="ellipse-a"></div>
+              <div class="ellipse-b"></div>
+              <div class="ellipse-c"></div>
+              <div class="ellipse-d"></div>
+              <div class="ellipse-e"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="left-footer">
+        © Copyright <b>Arsha</b>. All Rights Reserved
+      </div>
+      <div class="right-footer">Designed by <a href="#">BootstrapMade</a></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
