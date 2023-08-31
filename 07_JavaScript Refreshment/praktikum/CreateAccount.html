@@ -292,7 +292,7 @@
 
         const forms = document.querySelectorAll(".needs-validation");
 
-        let firstName = document.getElementById("fistName");
+        let firstName = document.getElementById("firstName");
         let lastName = document.getElementById("lastName");
         let userName = document.getElementById("userName");
         let inputEmail = document.getElementById("inputEmail");
@@ -302,7 +302,7 @@
           "input[name='checkGender']"
         );
         let selectNation = document.getElementById("selectNation");
-        let languageSpoken = document.querySelectorAll(
+        let languageSpokens = document.querySelectorAll(
           "input[name='languageSpoken']"
         );
         let selectedGender = "";
@@ -317,12 +317,12 @@
           });
         });
 
-        languageSpoken.forEach((languageSpoken) => {
+        languageSpokens.forEach((languageSpoken) => {
           languageSpoken.addEventListener("change", () => {
             selectedLang = [];
-            languageSpoken.forEach((language) => {
-              if (language.checked) {
-                selectedLang.push(language.value);
+            languageSpokens.forEach((languageSpoken) => {
+              if (languageSpoken.checked) {
+                selectedLang.push(languageSpoken.value);
               }
             });
             console.log(selectedLang);
@@ -334,14 +334,13 @@
             "submit",
             (event) => {
               if (!form.checkValidity()) {
-                let submitButton = document.querySelector(
-                  "button[type='submit']"
-                );
                 event.preventDefault();
                 event.stopPropagation();
                 alert("You need to fill the forms first!");
-              } else if (form.checkValidity()) {
-                alert(`First Name: ${firstName.value}
+              }
+              if (form.checkValidity()) {
+                alert(`
+                First Name: ${firstName.value}
                 Last Name: ${lastName.value}
                 Username: ${userName.value}
                 Email: ${inputEmail.value}
