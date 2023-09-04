@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans&family=Roboto:wght@300;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+}
+.navbar {
+  background: var(--bs-white, #fff);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+}
+a.navbar-brand {
+  color: var(--bs-dark, #212529);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.nav-item > a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+p {
+  color: #212529;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.content {
+  width: 656px;
+}
+label > span {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
