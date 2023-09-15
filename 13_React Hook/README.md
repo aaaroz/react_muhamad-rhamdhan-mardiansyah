@@ -16,9 +16,10 @@
 3. **Aturan pada Hooks**
 
 - _Hanya Panggil Hooks di Tingkat Atas_
-  Jangan memanggil Hooks dari dalam Loops, conditions, atau nested functions
-- \_Hanya Panggil Hooks dari Fungsi-Fungsi React
-  Jangan memanggil Hooks dari fungsi-fungsi javaScript biasa.
-  kita dapat:
+  > Jangan memanggil Hooks dari dalam Loops, conditions, atau nested functions
+- _Hanya Panggil Hooks dari Fungsi-Fungsi React_
+  > Jangan memanggil Hooks dari fungsi-fungsi javaScript biasa.
+
+maka dari itu, kita dapat:
   - Memanggil Hooks dari komponen-komponen fungsi react
   - Memanggil Hooks dari custom Hooks
