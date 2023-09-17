@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans&family=Roboto:wght@300;500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+}
+.navbar {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.content {
+  width: 656px;
+}
