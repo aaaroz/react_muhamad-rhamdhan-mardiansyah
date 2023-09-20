@@ -3,10 +3,10 @@
 1. **Router** merupakan modul dalam react yang berfungsi untuk melakukan proses navigasi pada SPA (Single Page Application). _Single Page Application_ adalah salah satu jenis aplikasi website dimana hanya ada 1 halaman yang menangani semua aktivitas yang terjadi dalam aplikasi tersebut. Sedangkan, _Multi Page Application_ yang juga biasa disebut dengan tradisional web app adalah jenis aplikasi website dimana perlu membuat ulang seluruh halaman web setiap kali membuat permintaan baru.
 
 Keunggulan SPA dan MPA
-![Keunggulan SPA MPA](./screenshots/keunggulanSPAMPA)
+![Keunggulan SPA MPA](./screenshot/keunggulanSPAMPA)
 
 Kekurangan SPA dan MPA
-![Keunggulan SPA MPA](./screenshots/kekuranganSPAMPA)
+![Keunggulan SPA MPA](./screenshot/kekuranganSPAMPA)
 
 2. **Parameter URL** adalah suatu parameter yang nilainya ditetapkan secara dinamis di URL halaman.
    Perbedaan Link dan Redirect, kegunaan URL Parameter adalah untuk paginasi, penyortiran dan penyaringan, pencarian, dan penggambaran.
