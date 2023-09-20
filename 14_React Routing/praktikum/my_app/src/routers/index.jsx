@@ -10,6 +10,7 @@ export default function SetupRouters() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<LoginPage />} />
+      {/* Private route */}
       <Route path="/" element={<PrivateRoute />}>
         <Route path="/create-product" index element={<CreateProduct />} />
         <Route path="/product/:index" element={<ProductDetail />} />
