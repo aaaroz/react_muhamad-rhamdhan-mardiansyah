@@ -26,20 +26,34 @@ export default function LoginPage() {
   };
 
   return (
-    <div>
-      <h1>Login Page</h1>
+    <div className="container">
+      <h1 className="text-center">Login Page</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="username"
-          name="username"
-          placeholder="enter your username"
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="enter your password"
-        />
-        <button type="submit">Login</button>
+        <div className="mb-3">
+          <label htmlFor="username">Username</label>
+          <input
+            type="username"
+            id="username"
+            name="username"
+            className="form-control"
+            placeholder="enter your username"
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            className="form-control"
+            placeholder="enter your password"
+          />
+        </div>
+        <div className="d-grid mt-3">
+          <button className="btn btn-primary" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );

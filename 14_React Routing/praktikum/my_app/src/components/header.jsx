@@ -8,6 +8,7 @@ export default function Header() {
     }
     console.log(getRandomInt(5));
   }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary">
       <div className="container-md container-sm container-lg pb-1">
@@ -62,17 +63,33 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item me-3">
-              <a
-                className="nav-link link-primary"
-                href="/#"
-                onClick={() => auth.logout()}
-              >
-                Logout
-              </a>
+              {auth.isAuthorized() && <ButtonLogout />}
+              {!auth.isAuthorized() && <ButtonLogin />}
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  );
+}
+
+function ButtonLogin() {
+  return (
+    <a className="nav-link link-primary" href="/#">
+      <Link to="/login" className="text-decoration-none">
+        Login
+      </Link>
+    </a>
+  );
+}
+function ButtonLogout() {
+  return (
+    <a
+      className="nav-link link-primary"
+      href="/#"
+      onClick={() => auth.logout()}
+    >
+      Logout
+    </a>
   );
 }
