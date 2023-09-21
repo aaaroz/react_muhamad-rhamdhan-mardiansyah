@@ -5,6 +5,7 @@ export const db = [
     name: "Nikke 1",
     category: "Hoodie",
     freshness: "Brand New",
+    image: "",
     price: "28",
   },
   {
@@ -12,6 +13,7 @@ export const db = [
     name: "Nikke 2",
     category: "T-shirt",
     freshness: "Brand New",
+    image: "",
     price: "22",
   },
 ];

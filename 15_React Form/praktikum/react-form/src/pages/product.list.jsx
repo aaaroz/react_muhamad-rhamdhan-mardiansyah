@@ -11,6 +11,7 @@ function ProductList({ productList, handleEditProduct, handleDeleteProduct }) {
             <th scope="col">Product Name</th>
             <th scope="col">Product Category</th>
             <th scope="col">Product Freshness</th>
+            <th scope="col">Product Image</th>
             <th scope="col">Product Price</th>
             <th scope="col">Action</th>
           </tr>
@@ -24,16 +25,21 @@ function ProductList({ productList, handleEditProduct, handleDeleteProduct }) {
               <td>{product.name}</td>
               <td>{product.category}</td>
               <td>{product.freshness}</td>
+              <td>
+                <img src={product.image} alt="product image" />
+              </td>
               <td>${product.price}</td>
               <td className="d-flex">
                 <button
                   className="btn btn-primary m-1 fw-medium fs-6"
-                  onClick={() => handleEditProduct(index)}>
+                  onClick={() => handleEditProduct(index)}
+                >
                   Edit
                 </button>
                 <button
                   className="btn btn-danger m-1 fw-medium fs-6"
-                  onClick={() => handleDeleteProduct(index)}>
+                  onClick={() => handleDeleteProduct(index)}
+                >
                   Delete
                 </button>
               </td>

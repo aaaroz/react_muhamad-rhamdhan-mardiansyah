@@ -15,6 +15,7 @@ function ProductDetail() {
         <p>{productDetail.name}</p>
         <p>{productDetail.category}</p>
         <p>{productDetail.freshness}</p>
+        <img src={productDetail.image} alt="Product Image" />
         <p>${productDetail.price}</p>
       </div>
     </section>

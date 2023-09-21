@@ -28,12 +28,14 @@ function ProductList({ productList, handleEditProduct, handleDeleteProduct }) {
               <td className="d-flex">
                 <button
                   className="btn btn-primary m-1 fw-medium fs-6"
-                  onClick={() => handleEditProduct(index)}>
+                  onClick={() => handleEditProduct(index)}
+                >
                   Edit
                 </button>
                 <button
                   className="btn btn-danger m-1 fw-medium fs-6"
-                  onClick={() => handleDeleteProduct(index)}>
+                  onClick={() => handleDeleteProduct(index)}
+                >
                   Delete
                 </button>
               </td>

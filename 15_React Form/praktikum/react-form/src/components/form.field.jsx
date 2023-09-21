@@ -14,6 +14,7 @@ export default function FormField() {
   const [editIndex, setEditIndex] = useState(null);
   const [error, setError] = useState(null);
   const [validated, setValidated] = useState(false);
+  const [image, setImage] = useState("");
 
   //onSubmit event handling
   const handleSubmit = (event) => {
@@ -49,6 +50,7 @@ export default function FormField() {
         name: productName,
         category: productCategory,
         freshness: productFreshness,
+        image: image,
         price: productPrice,
       };
       alert("Form submited");
@@ -69,6 +71,7 @@ export default function FormField() {
         name: productName,
         category: productCategory,
         freshness: productFreshness,
+        image: image,
         price: productPrice,
       };
       setProductList(updatedProductList);
@@ -80,6 +83,7 @@ export default function FormField() {
     setProductName("");
     setProductCategory("");
     setProductFreshness("brand new");
+    setImage("");
     setProductPrice("");
   };
 
@@ -97,6 +101,11 @@ export default function FormField() {
       setError(null);
     }
   }
+
+  const handleImage = (e) => {
+    const uploaded = e.target.files[0];
+    setImage(uploaded);
+  };
 
   //handle Category onChange
   const handleProductCategoryChange = (e) => {
@@ -120,6 +129,7 @@ export default function FormField() {
     setProductCategory(productToEdit.category);
     setProductFreshness(productToEdit.freshness);
     setProductPrice(productToEdit.price);
+    setImage(productToEdit.image);
     setEditIndex(index);
   };
 
@@ -185,6 +195,7 @@ export default function FormField() {
               className="form-control"
               id="inputFile"
               name="inputFile"
+              onChange={handleImage}
               required
             />
           </div>
