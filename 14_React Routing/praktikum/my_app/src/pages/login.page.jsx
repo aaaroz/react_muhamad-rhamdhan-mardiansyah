@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import auth from "../utils/auth";
+import Header from "../components/header";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -26,35 +27,38 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="container">
-      <h1 className="text-center">Login Page</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="username">Username</label>
-          <input
-            type="username"
-            id="username"
-            name="username"
-            className="form-control"
-            placeholder="enter your username"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            className="form-control"
-            placeholder="enter your password"
-          />
-        </div>
-        <div className="d-grid mt-3">
-          <button className="btn btn-primary" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+    <>
+      <Header />
+      <div className="container content mt-3">
+        <h1 className="text-center">Login Page</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="username">Username</label>
+            <input
+              type="username"
+              id="username"
+              name="username"
+              className="form-control"
+              placeholder="enter your username"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="form-control"
+              placeholder="enter your password"
+            />
+          </div>
+          <div className="d-grid mt-3">
+            <button className="btn btn-primary" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
