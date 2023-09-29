@@ -20,7 +20,7 @@ serve -s build
 ![serve running](./screenshot/image-summary/serve.running.png)<br/>
 **untuk info lebih lengkapnya kunjungi [link berikut](https://cra.link/deployment)**
 
-### 3) Vercel
+### 3) Get Starting with Vercel
 
 Vercel merupakan platform end-to-end untuk developer, yang memungkinkan kita untuk membuat dan men-deploy aplikasi web kita.<br/>
 ![vercel](./screenshot/image-summary/vercel.png)<br/>
