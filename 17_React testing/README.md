@@ -16,11 +16,11 @@
 
 - _Render RTL_ akan merender file JSX apapun yang dibutuhkan.
 - _Debug RTL_ untuk meyakinkan bahwa file JSX sudah terender dengan baik.
-  ![render&debug](./screenshot/render&debug.png)<br/>
+  ![render&debug](./screenshot/additionalScreenshots/render&debug.png)<br/>
 
 **Memilih Elemen untuk di test**<br/>
 React Testing Library menawarkan berbagai fungsi untuk mendapatkan elemen. Kita dapat memilih elemen dengan fungsi object screen RTL. Salah satu contohnya adalah `getByText` untuk memilih teks dari elemen yang sudah dipilih.
-![render&debug](./screenshot/getByText.png)<br/>
+![render&debug](./screenshot/additionalScreenshots/getByText.png)<br/>
 contoh kategori testing lainnya yang dapat digunakan adalah:
 
 - LabelText : `getByLabelText: <label for="search" />`
@@ -30,30 +30,30 @@ contoh kategori testing lainnya yang dapat digunakan adalah:
 
 **Handle Event**<br/>
 berikut adalah contoh testing handle event.
-![htmlEvent](./screenshot/htmlEvent.png)
-![testHandleEvent](./screenshot/testHandleEvent.png)
+![htmlEvent](./screenshot/additionalScreenshots/htmlEvent.png)
+![testHandleEvent](./screenshot/additionalScreenshots/testHandleEvent.png)
 
 **Handle Asynchronous**<br/>
 handle async ini digunakan ketika hendak mengetes fetch sebuah API. Pada case ini kita perlu membuat mock untuk axios (atau yang lain).<br/>
 
 ##### fetch data <br/>
 
-![jsxFetchData](./screenshot/jsxFetchData.png)<br/>
+![jsxFetchData](./screenshot/additionalScreenshots/jsxFetchData.png)<br/>
 
 ##### fetch data <br/>
 
-![htmlFetchData](./screenshot/htmlFetchData.png)<br/>
+![htmlFetchData](./screenshot/additionalScreenshots/htmlFetchData.png)<br/>
 
 ##### mock axios menggunakan Jest <br/>
 
-![testFetchedData](./screenshot/testFetchedData.png)<br/>
+![testFetchedData](./screenshot/additionalScreenshots/testFetchedData.png)<br/>
 
 ##### mock axios menggunakan Jest <br/>
 
-![succeedTest](./screenshot/succeedTest.png)<br/>
+![succeedTest](./screenshot/additionalScreenshots/succeedTest.png)<br/>
 
 ##### mock axios menggunakan Jest <br/>
 
-![failedTest](./screenshot/failedTest.png)<br/>
+![failedTest](./screenshot/additionalScreenshots/failedTest.png)<br/>
 
 3. **Testing Custom Hook**, Library yang digunakan untuk mengetes custom hook, biasanya menggunakan React Hooks Testing Library. Dia akan memberikan kita alat alat untuk mengetes hooks tanpa merender satu komponen. untuk menginstall nya kita dapat menjalankan command ini: `npm/yarn install -D @testing-library/react-hooks` untuk dokumentasi React Hooks Testing Library ini bisa diakses pada link [berikut](https://www.react-hooks-testing-library.com)
