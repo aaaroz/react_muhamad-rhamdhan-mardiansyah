@@ -1,5 +1,11 @@
 # 18 Deployment With Vercel
 ## [Link Deployment With Vercel](https://react-deploy-prod.vercel.app/)
+### Authorized account :
+```
+username : kminchelle 
+password: 0lelplR
+```
+
 ### 1) Build React App
 
 Secara default, React mengandung banyak pesan peringatan, Peringatan-peringatan ini sangat berguna dalam pengembangan aplikasi. Namun, pesan-pesan ini membuat react menjadi lebih besar dan lambat. Oleh karenanya kita harus menggunakan versi produksi ketika men-deploy aplikasi react. Tujuan melakukan build adalah agar aplikasi kita menjadi versi production, sehingga performanya lebih ringan dan cepat. untuk melakukan build pada aplikasi yang dibuat menggunakan Create React App kita perlu menjalankan command: `npm run build` ini akan membuat versi produksi untuk aplikasi kita didalam folder build/. ini hanya diperlukan sebelum men-deploy ke produksi. Untuk pengembangan/development normal, tetap gunakan npm start. <br/>
