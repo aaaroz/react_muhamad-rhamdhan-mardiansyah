@@ -29,6 +29,9 @@ describe("CreateProduct", () => {
     const inputElement = screen.getByLabelText(/Product Name/i);
     fireEvent.change(inputElement, { target: { value: "Nikke 1" } });
     expect(inputElement).toHaveValue("Nikke 1");
+
+    const inputedProductName = screen.getByTestId("inputed-product-name");
+    expect(inputedProductName).toHaveTextContent("Nikke 1");
   });
 
   //trigger selectCategory input

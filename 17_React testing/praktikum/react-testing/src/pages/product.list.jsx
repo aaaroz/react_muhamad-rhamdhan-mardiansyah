@@ -26,7 +26,7 @@ function ProductList() {
           {products.map((product, index) => (
             <tr key={index}>
               <td>{index + 1}</td>
-              <td>{product.productName}</td>
+              <td data-testid="inputed-product-name">{product.productName}</td>
               <td data-testid="selected-category">{product.productCategory}</td>
               <td data-testid="selected-radio">{product.productFreshness}</td>
               <td>{product.addDescription}</td>
