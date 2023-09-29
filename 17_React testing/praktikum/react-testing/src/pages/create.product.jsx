@@ -4,7 +4,6 @@ import logo from "../assets/bootstrap-logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/style.css";
 import FormProduct from "../components/form.product";
-import { convertCurrency } from "../utils/convert.currency";
 
 export default function CreateProduct() {
   // objek artikel untuk mengganti Bahasa Inggris atau Indonesia
