@@ -1,12 +1,14 @@
 import { useRef, useState } from "react";
 import React from "react";
 import { Form } from "react-bootstrap";
-import ProductList from "../pages/product.list";
 import { useDispatch } from "react-redux";
-import { addProduct } from "../store/product/product.slices.js";
+import { Link } from "react-router-dom";
+import { fetchPostProducts } from "../store/createProductSlice";
+import { useNavigate } from "react-router-dom";
 
 function FormProduct() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const emptyData = {
     productName: "",
@@ -32,7 +34,7 @@ function FormProduct() {
       event.preventDefault();
       alert("form submitted!");
       dispatch(
-        addProduct({
+        fetchPostProducts({
           id: nextId++,
           ...data,
         })
@@ -40,6 +42,9 @@ function FormProduct() {
       setData(emptyData);
       inputImg.current.value = null;
       setValidated(false);
+
+      const returnTo = "/product";
+      navigate(returnTo);
     }
     setValidated(true);
   };
@@ -205,17 +210,20 @@ function FormProduct() {
           <div className="text-center">
             <p className="text-danger">{errorMessage}</p>
           </div>
-          <div className="d-grid mb-3 pe-5">
-            <button className="btn btn-primary" type="submit">
+          <div className="d-flex mb-5 pe-5 justify-content-center gap-5">
+            <button className="btn btn-primary px-5" type="submit">
               Submit
             </button>
+            {/* </div> */}
+            {/* <div className="d-flex justify-content-center mb-3 pe-5"> */}
+            <Link to="/product" className="text-white text-decoration-none">
+              <button className="btn btn-secondary px-5" type="button">
+                List Product
+              </button>
+            </Link>
           </div>
         </Form>
         {/* end of form */}
-      </div>
-      <div className="container-fluid">
-        {/* Table */}
-        <ProductList />
       </div>
     </>
   );
