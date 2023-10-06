@@ -20,6 +20,49 @@ Untuk mendapatkan API (Application Programming Interface) kita bisa menggunakan 
 ![Access MockAPI Endpoint](./screenshot/summary.screenshots/access.mockapi.endpoint.png)<br/>
 
 ### 3) Implementation Get Data and Render
+##### 1. Make `index.html` file and class container 
+```
+<body>
+  <h1>Your Data<h1>
+  <div class="container"></div>
+</body>
+```
 
-![get data and render ](screenshot/summary.screenshots/get.data.and.render.png)<br/>
-![get data abd rebnder 2](screenshot/summary.screenshots/get.data.render2.png)
+##### 2. Make `<script>` for your JavaScript. Then make this function to get data inside your `<script>`
+```
+async function getUsers(){
+          let url ="https://6299e3697b866a90ec452547.mockapi.io/peserta/v1/users";
+          try {
+            let res = await fetch(url);
+            console.log("your status : ", res.status); // untuk dapat melakukan pengecekan terhadap status data
+            return await res.json();
+          } catch (error) {
+            console.log(error);
+          }
+        }
+```
+
+##### 3. Make `renderUsers` function inside `<script>`
+```
+  //function yang berfungsi untuk menampilkan data ke dalam halaman
+        async function renderUsers() {
+          let users = await getUsers();
+          console.log(users);
+          let html = "";
+          users.forEach((user) => {
+            let htmlSegment = `<div class="user">
+                          <img src="${user.avatar}" >
+                          <h3>${user.id} : ${user.name}</h3>
+                       </div>
+                            <button onclick="deleteUser(${user.id})"> Delete id : ${user.id}</button>
+                       <hr>`;
+            //menambahkan data ke dalam variabel html.
+            html += htmlSegment;
+          });
+
+          let container = document.querySelector(".container");
+          container.innerHTML = html;
+        }
+        renderUsers();
+```
+#### For more implementation check this [repo - Restfull API with JavaScript - by attoyibi](https://github.com/attoyibi/frontend-intern-basic-code/tree/main/Restfull%20API%20with%20Javascript%20)
