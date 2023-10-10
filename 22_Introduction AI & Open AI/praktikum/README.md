@@ -1,6 +1,6 @@
 # Praktik Penggunaan OpenAI Playground
 
-**ZARA ASSISTANT**
+**ZARA ASSISTANT**<br/>
 _Mode: Chat_ <br/>
 _Model: gpt-3.5-turbo_<br/>
 _System: You are helpful ZARA Clothing store assistant_
