@@ -7,16 +7,18 @@
 - **Dipakai Banyak User**
 - **Jumlah Parameter: 175 Miliar (model davinci 03)**
 
-[Link documentation OpenAI](https://platform.openai.com/docs/introduction)<br/>
-[Untuk Menginstall OpenAI klik disini](https://platform.openai.com/docs/api-reference)
+> [Link documentation OpenAI](https://platform.openai.com/docs/introduction)<br/>
+> [Untuk Menginstall OpenAI klik disini](https://platform.openai.com/docs/api-reference)<br/>
+> Installation OpenAI with React-vite Repository [React-OpenAI](https://github.com/aaaroz/react-openAI)
+
 
 ### 2) Pemasangan Open AI di React
 
-- Membuat React Project (via CRA or Vite)
+- Membuat React Project (via CRA or Vite)<br/>
   Code : `npx create-react-app my-app` or `npm create vite`
-- Install OpenAI Package
+- Install OpenAI Package <br/>
   Bukalah terminal dan masukkan perintah `npm install openai react-hook-form react-markdown react-bootstrap bootstrap`
-- Buat folder configs/openai.js lalu isikan code berikut
+- Didalam folder `/src` buat file `configs/openai.js` lalu isikan code berikut<br/>
   Code :<br/>
 
 ```
@@ -96,6 +98,7 @@ export default App;
 
 - setelah itu buka terminal lalu ketik `npm run dev`
   maka akan terlihat hasil seperti ini: <br/>
+  
   ![Chat GPT Lite](screenshot/summary/chat-gpt-lite.jpeg)
 
 ### 3) Mendapatkan API Keys
@@ -103,7 +106,7 @@ export default App;
 1. Buka situs web openAI di [API Reference - OpenAI API](https://platform.openai.com/docs/api-reference) menggunakan browser web anda.
 2. Lakukan login pada situs OpenAI Flatform, jika belum mempunyai account maka lakukan signup terlebih dahulu.
 3. Kemudian jika sudah login pada Flatform OpenAI, cari bagian _introduction_ dan masuk ke API keys atau masuk ke halaman berikut [OpenAI - API Key](https://platform.openai.com/account/api-keys)
-4. setelah masuk kehalaman API Key, klick pada button `Create new secret key`
+4. setelah masuk kehalaman API Key, klik pada button `Create new secret key`
    ![Api Key](screenshot/summary/api-key.png)
 5. setelah mengklik button maka akan muncul halaman seperti dibawah ini, lalu ikuti petunjuk untuk mengkonfigurasi API Key sesuai kebutuhan.
    ![Api key 2](screenshot/summary/api-key-2.png)
@@ -113,4 +116,4 @@ export default App;
    ![api ke 4](screenshot/summary/api-key-4.png)
 8. Jika semua langkah sudah dilakukan dengan benar, maka react project with openai kalian sudah berhasil.
 
-> Seluruh code diatas bisa diakses pada repo [React-OpenAI](https://github.com/aaaroz/react-openAI)
+> Untuk Code lebih jelas bisa diakses pada repository [React-OpenAI](https://github.com/aaaroz/react-openAI)
