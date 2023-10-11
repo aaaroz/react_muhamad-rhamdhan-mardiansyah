@@ -112,3 +112,5 @@ export default App;
 7. Masukkan API key, yang sudah di copy tadi ke dalam project react pada bagian `configs/openai.js`
    ![api ke 4](screenshot/summary/api-key-4.png)
 8. Jika semua langkah sudah dilakukan dengan benar, maka react project with openai kalian sudah berhasil.
+
+> Seluruh code diatas bisa diakses pada repo [React-OpenAI](https://github.com/aaaroz/react-openAI)
