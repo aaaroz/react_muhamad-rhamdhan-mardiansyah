@@ -67,6 +67,7 @@ function App() {
         .create({
           model: "gpt-3.5-turbo",
           messages: [systemMessage, ...apiMessages],
+          max_tokens: 50,
         })
         .then((data) => {
           setMessages([
