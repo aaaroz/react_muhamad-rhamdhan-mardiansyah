@@ -52,7 +52,7 @@ function App() {
     //format messages for OpenAI API
     let apiMessages = chatMessages.map((messageObject) => {
       let role = "";
-      if (messageObject.sender === "ChatGPT") {
+      if (messageObject.sender === "Brody") {
         role = "assistant";
       } else {
         role = "user";
@@ -74,7 +74,7 @@ function App() {
             ...chatMessages,
             {
               message: data.choices[0].message.content,
-              sender: "Brody",
+              sender: "user",
             },
           ]);
           setIsTyping(false);
