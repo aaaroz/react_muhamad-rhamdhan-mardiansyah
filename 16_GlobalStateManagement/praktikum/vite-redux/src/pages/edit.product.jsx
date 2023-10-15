@@ -3,14 +3,14 @@ import Header from "../components/header";
 import logo from "../assets/bootstrap-logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/style.css";
-import FormProduct from "../components/form.product";
+import FormEditProduct from "../components/form.edit.product";
 
-export default function CreateProduct() {
+export default function EditProduct() {
   // objek artikel untuk mengganti Bahasa Inggris atau Indonesia
   const article = {
     title: {
-      id: "Buat Produk",
-      en: "Create Product",
+      id: "Perbarui Produk",
+      en: "Update Product",
     },
 
     description: {
@@ -73,7 +73,7 @@ export default function CreateProduct() {
           </button>
         </div>
         <div className="container-fluid justify-content-center">
-          <FormProduct />
+          <FormEditProduct />
         </div>
       </div>
     </>
